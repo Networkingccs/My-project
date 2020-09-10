@@ -10,17 +10,15 @@
 
 # Workflows for connection
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+    ## FIRST WORKFLOW: Will define each peripheral condition connection by using the command prompt that the specialist will configure based on conditionals
+    ## SECOND WORKFLOW: After the synchronization is done the ip addresses will be also connected each other ang giving correct PINGS
+      
+      # Exe first commands sequence for networking verification
+      - Cisco peripheral connections: execute set of commands based on conditionals IF-ELSE IF...
+        run: print CONNECTIONS DONE once every PING has succesfully arrived
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project
+      # Exe second commands for IP verification
+      - IP NETWORK VERIFICATION: Execute a multi line script based on IF returning positive PINGS ELSE : FALSE
+        run: sequence of commands for PING and ELSE
+          echo IF FALSE-RE-EXECUTE SCRIPT VERIFICATION,
+          echo test, PROJECT SUCCEED-PRINT
