@@ -1,0 +1,22 @@
+#Networking will be based on the needed command prompts to execute 2 sequencees
+##First sequence: connections verification by conditional
+##Second sequence: command prompts for connecting addresses
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# Workflows for connection
+
+    ## FIRST WORKFLOW: ITS IMPORTANT TO VERIFY HERE SYNCRONIZATION WITH COMM ON IP ADDRESSES
+    ## SECOND WORKFLOW: IT MUST BE A COMPLETE CONCATENATION OF THE CONNECTIONS IN ORDER TO COMPLETE THE CONNECTIONS DETAILS
+      
+      # Exe first commands sequence for networking verification***EXECUTION MUST BE PRECISELY REVISED ACCORDING TO CONDITIONALS***
+      - Cisco peripheral connections: execute set of commands based on conditionals IF-ELSE IF...***THIS MUST BE ACCOMPANIED BY SPECIFIC STRUCTURES**
+        run: print CONNECTIONS DONE once every PING has succesfully arrived
+
+      # Exe second commands for IP verification***IP VERIFICATION WIL BE SUCCESFUL ONLY ON CORRECT NETWORKING PREMISES**PLEASE GET GOOD SYNTAX
+      - IP NETWORK VERIFICATION: Execute a multi line script based on IF returning positive PINGS ELSE : FALSE
+        run: sequence of commands for PING and ELSE
+          echo IF FALSE-RE-EXECUTE SCRIPT VERIFICATION,
+          echo test, PROJECT SUCCEED-PRINT
